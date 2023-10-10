@@ -20,10 +20,10 @@ class Smog:
         If all_sentences is false, computes the score as described in McLaughlin, 1969, using exactly 30 sentences
         If all_sentences is true, adjusts the score to use all sentences in the text
         """
-        if stats.num_sentences < 30:
-            raise ReadabilityException(
-                'SMOG requires 30 sentences. {} found'
-                .format(stats.num_sentences))
+        # if stats.num_sentences < 30:
+        #     raise ReadabilityException(
+        #         'SMOG requires 30 sentences. {} found'
+        #         .format(stats.num_sentences))
 
         self._stats = stats
         self.all_sentences = all_sentences
